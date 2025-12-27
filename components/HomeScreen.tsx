@@ -9,6 +9,7 @@ import PDFIcon from '@/public/assets/images/pdf.png';
 import MailIcon from '@/public/assets/images/email-icon.png';
 import intnetExplorerImage from '@/public/assets/images/internet-explorer.png';
 import myComputerIcon from '@/public/assets/images/my-computer.png';
+import linkedinIcon from '@/public/assets/images/linkedin.png';
 import Explorer from './Explorer';
 import LoaderDialog from './LoaderDialog';
 
@@ -50,26 +51,46 @@ const HomeScreen = () => {
     {
       name: "About Me",
       src: myComputerIcon,
+      type: "window"
     },
     {
       name: "Resume",
       src: PDFIcon,
-    },
-    {
-      name: "Contact Me",
-      src: MailIcon,
+      type: "window"
     },
     {
       name: "My Projects",
       src: intnetExplorerImage,
+      type: "window"
+    },
+    {
+      name: "Hire Me",
+      src: MailIcon,
+      type: "window"
+    },
+    {
+      name: "LinkedIn",
+      src: linkedinIcon,
+      type: "link",
+      url: "https://www.linkedin.com/in/your-profile"
     },
   ];
 
 
   const openFileExplorer = (icon : any) : any  => {
+    // Handle external links
+    if(icon.type === 'link' && icon.url) {
+      window.open(icon.url, '_blank');
+      return;
+    }
+
+    // Handle window-based content
     if(icon.name === 'Resume') {
       setDialogConfig(icon)
+    } else {
+      setDialogConfig(icon)
     }
+    
     const isWWindowOpen :any = listOfWindowsOpened.findIndex((data : any) => String(data['name']) === String(icon['name']));
     if(isWWindowOpen === -1) {
       setListOfWindowsOpened((prevList : any) => [...prevList, icon]);

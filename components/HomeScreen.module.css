@@ -6,6 +6,10 @@
     background-position: center;
 }
 
+.desktopIcon {
+    transition: all 0.2s ease-in-out;
+}
+
 .desktopIcon:hover {
     background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
     backdrop-filter: blur(10px); /* The frosted glass effect */
@@ -13,4 +17,10 @@
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.desktopIcon:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }

@@ -72,7 +72,7 @@ const HomeScreen = () => {
       name: "LinkedIn",
       src: linkedinIcon,
       type: "link",
-      url: "https://www.linkedin.com/in/your-profile"
+      url: "https://www.linkedin.com/in/naman-mishra-575476193"
     },
   ];
 

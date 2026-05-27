@@ -33,7 +33,7 @@ export default function RootLayout({
       </head>
       <body
         className="antialiased"
-        style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}
+        style={{ fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif' }}
       >
         <GlobalProvider>
         {children}

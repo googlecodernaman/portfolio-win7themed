@@ -17,7 +17,7 @@ import { ZoomPluginPackage, ZoomMode } from '@embedpdf/plugin-zoom/react';
 // 1. Register the plugins you need
 const plugins = [
     createPluginRegistration(DocumentManagerPluginPackage, {
-        initialDocuments: [{ url: 'assets/pdf/Eshwar_Esarapu.pdf' }],
+        initialDocuments: [{ url: 'assets/pdf/Resume_Naman-AIML.pdf' }],
     }),
     createPluginRegistration(ViewportPluginPackage),
     createPluginRegistration(ScrollPluginPackage),

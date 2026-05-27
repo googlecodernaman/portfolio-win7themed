@@ -39,7 +39,7 @@ const LoginScreen = () => {
             <div className={styles.glassImage} onClick={login}>
               <Image src={floweImg} alt='User' width={100} height={100} />
             </div>
-            <p className='text-white text-lg mt-3'>Eshwar</p>
+            <p className='text-white text-lg mt-3'>Naman Mishra</p>
             <p className='text-white text-lg'>Software Developer</p>
           </div>
         </div>
@@ -49,7 +49,7 @@ const LoginScreen = () => {
           <div className='flex justify-between'>
             <div></div>
             <div className='flex'>
-                <Image src={windowsLogo} alt='windows7' height={40} width={55}/> <p className={styles.titleFont}> Eshwar </p> <span className={styles.registedFont}>®</span>
+                <Image src={windowsLogo} alt='windows7' height={40} width={55}/> <p className={styles.titleFont}> Naman OS </p> <span className={styles.registedFont}>®</span>
             </div>
             <div className='relative'>
                 <button 

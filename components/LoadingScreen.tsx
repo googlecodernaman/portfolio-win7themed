@@ -21,7 +21,7 @@ const LoadingScreen = () => {
             </div>
         </div>
         <div className="w-full pb-8">
-            <p className={`flex items-center justify-center text-xs text-gray-400 ${styles.fadeIn}`}>For the best expirience</p>
+            <p className={`flex items-center justify-center text-xs text-gray-400 ${styles.fadeIn}`}>For the best experience</p>
             <p className={`flex items-center justify-center text-xs text-gray-400 ${styles.fadeIn}`}>Enter the full screen (F11)</p>
         </div>
     </div>
